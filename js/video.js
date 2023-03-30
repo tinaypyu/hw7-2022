@@ -18,6 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
 	document.querySelector("#play").addEventListener("click", function() {
 	console.log("Play Video");
 	document.querySelector(".video").play(); 
+	document.querySelector("#volume").innerHTML = (document.querySelector("video").volume)*100 + "%"; 
 	console.log("Current volume is " + document.querySelector("video").volume); 
 	}); 
 });
